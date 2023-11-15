@@ -7,7 +7,7 @@ public class DataConv {
 
         String str1 = String.valueOf(123);
         String str2 = String.valueOf(123.456);
-        String str3 = String.valueOf("false");
+        String str3 = String.valueOf(false);
         String str4 = String.valueOf('a');
 
         System.out.println(num1);
