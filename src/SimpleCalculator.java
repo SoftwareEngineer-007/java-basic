@@ -8,5 +8,22 @@ public class SimpleCalculator {
         var y = new Scanner(System.in).nextInt();
         System.out.print("Enter operator(+, -, *, /, %): ");
         var operator = new Scanner(System.in).nextLine().charAt(0);
+
+        String result;
+        if (operator == '+') {
+            result = "x + y = " + (x + y);
+        } else if (operator == '-') {
+            result = "x - y = " + (x - y);
+        } else if (operator == '*') {
+            result = "x * y = " + (x * y);
+        } else if (operator == '/') {
+            result = "x / y = " + (x / y);
+        } else if (operator == '%') {
+            result = "x % y = " + (x % y);
+        } else {
+            result = "Enter correct data " + operator;
+        }
+
+        System.out.println(result);
     }
 }
